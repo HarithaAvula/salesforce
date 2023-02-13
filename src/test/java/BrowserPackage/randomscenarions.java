@@ -492,14 +492,14 @@ public class randomscenarions {
 	
 	
 	public static void main(String[] args) throws InterruptedException {
-		//home_tab();
+		home_tab();
 		//clicking username on leftside
 		
-	//	home_tab_left();
-		//profile_update();
-		//custom_tabs();
+	home_tab_left();
+		profile_update();
+		custom_tabs();
 		
-		//event_tab();
+		event_tab();
 	
 		
 		month_tab();

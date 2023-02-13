@@ -338,10 +338,10 @@ public class salesforc_settings {
 	public static void main(String[] args) throws InterruptedException {
 		
 	      
-		//logoutdetails();
-		//display_layout();
-		//email_settings();
-		//calendartab();
+		logoutdetails();
+		display_layout();
+		email_settings();
+		calendartab();
 		developertab();
 		
 		

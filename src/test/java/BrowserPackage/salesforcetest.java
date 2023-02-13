@@ -298,7 +298,7 @@ public class salesforcetest {
 		driver.findElement(By.xpath("//a[contains(text(),'My Profile')]")).click();
         String url = driver.getCurrentUrl();
          
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         
        
 
@@ -309,7 +309,8 @@ public class salesforcetest {
         {
           WebElement element = driver.findElement(By.cssSelector("html"));
           Actions builder = new Actions(driver);
-          builder.moveToElement(element).clickAndHold().perform();
+         // builder.moveToElement(element).clickAndHold().perform();
+          builder.moveToElement(element).click().build().perform();
         }
         // 8 | mouseUp | css=p | 
         {
@@ -391,7 +392,7 @@ public class salesforcetest {
 		
 		executor.executeScript("document.getElementById('chatterFile').click();");
 		
-		StringSelection stringSelection = new StringSelection("/Users/sureshreddy/Desktop/files/NewData.xlsx");
+		StringSelection stringSelection = new StringSelection("/Users/sureshreddy/Desktop/Haritha_work/java_practice/SeleniumMaven/NewData.xlsx/NewData.xlsx");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		
 		Robot robot=new Robot();
@@ -468,19 +469,19 @@ public class salesforcetest {
 	
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-	//loginwrong();
+		loginwrong();
 	
-    //logincorrect();
+		logincorrect();
 	
-	//remberbox();
-	//returnfromhome();
-	//forgotpassword();
-	//wrong_details();
-	//usermenu();
-	//myprofile();
-  //   posttext();
-	//	fileupload();
-	photoupload();
+		remberbox();
+		returnfromhome();
+		forgotpassword();
+		wrong_details();
+		usermenu();
+		myprofile();
+		posttext();
+		fileupload();
+	  photoupload();
 	
 		
 
